@@ -1,5 +1,5 @@
 
-gate_split_and_run.py mac/main.mac -a N 2e6 -a TYPE gaga -j 1 -o output
+gate_split_and_run.py mac/main.mac -a N 2e6 -a TYPE gaga -j 5 -o output
 
 #Wait Gate pids
 processId=($(ps -ef | grep 'Gate' | grep -v 'grep' | awk '{ print $2 }'))
